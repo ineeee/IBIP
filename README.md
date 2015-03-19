@@ -49,3 +49,26 @@ Where the target is one of two options:
 If the call was sent through a channel and **not** privately, the bot should
 reply through the channel. If the call was sent privately, the bot should reply
 through a corresponding PRIVMSG directly to the sender.
+
+The response sent to the target has the following format:
+
+```
+Reporting in! [\<language\>] information
+```
+
+In this format, the "Reporting in!" component is **static** and should **not**
+vary between IBIP-compliant bots.
+
+The "[\<language\>]" component is **optional**, and specifies the language(s)
+in which the IRC bot was developed. If multiple languages were used, it is
+recommended that they be separated by slashes, although this is not mandatory.
+
+After the "[\<language\>]" component, the bot writer may choose to specify any
+additional information they consider pertinent to someone identifying bots with
+IBIP. This information is **optional**.
+
+In summary, an example IBIP response might look like this:
+
+```
+PRIVMSG #channel :Reporting in! [C] More info at http://example.com
+```
