@@ -1,13 +1,17 @@
 # IBIP
 The IRC Bot Identification Protocol Standard
 
+### Prologue
+
 The IBIP Standard is designed to allow channel operators and IRC administration an easy way to determine if a User is a bot.
 
 This standard should be defined in the Server INFO response as a server feature/requirement.
 
+### Protocol
+
 IBIP has two mandatory components: a *call* component and a *response* component.
 
-### The "call" component
+#### The "call" component
 
 Clients expecting a response from **all** IBIP-compliant IRC bots in the current
 channel should send a PRIVMSG in the following format:
@@ -32,7 +36,7 @@ If the nickname messaged is not the nickname of an IBIP-compliant bot **or** doe
 not exist on the network, the client should not expect to receive a proper
 response.
 
-### The "response" component
+#### The "response" component
 
 Upon receiving a PRIVMSG of the format specified above, IBIP-compliant IRC bots
 are expected to send a response PRIVMSG in the following format:
