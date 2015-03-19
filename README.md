@@ -38,7 +38,7 @@ Upon receiving a PRIVMSG of the format specified above, IBIP-compliant IRC bots
 are expected to send a response PRIVMSG in the following format:
 
 ```
-PRIVMSG target :Reporting in! [lang] information
+PRIVMSG target :Reporting in! [<language>] information
 ```
 
 Where the target is one of two options:
@@ -53,7 +53,7 @@ through a corresponding PRIVMSG directly to the sender.
 The response sent to the target has the following format:
 
 ```
-Reporting in! [\<language\>] information
+Reporting in! [<language>] information
 ```
 
 In this format, the "Reporting in!" component is **static** and should **not**
