@@ -11,9 +11,24 @@ IBIP relies upon the standard behavior of IRC clients, as standardized in
 
 This standard should be defined in the Server INFO response as a server feature/requirement.
 
+### Labels
+
+* A **robot** or **bot** is an automated script or program that performs tasks
+on an IRC network.
+
+* A **client** is a user, usually humanoid, connected to an IRC network.
+
+* A **target** is an IRC channel or nickname used by both **clients** and
+**robots** to direct IBIP messages.
+
 ### Protocol
 
 IBIP has two mandatory components: a *call* component and a *response* component.
+
+Human **clients** are normally the originators of the *call* component, while
+**robots** respond to the call with the *response* component. However, nothing
+stop **robots** from originating an IBIP call, and nothing stops human
+**clients** from falsely responding to the call.
 
 #### The "call" component
 
