@@ -25,7 +25,7 @@ Within an IRC client, this message will be just `.bots`.
 The target may be one of two options:
 
 * A channel, like `#bots` or `#help`
-* An IRC nickname, like `#user123` or `#johndoe`
+* An IRC nickname, like `user123` or `johndoe`
 
 If the target is a channel, the client must expect to receive proper responses
 from all IBIP-compliant bots in the targeted channel.
