@@ -7,7 +7,7 @@ The IRC Bot Identification Protocol, or IBIP, formalizes the detection
 and enumeration of robots on an IRC network.
 
 IBIP relies upon the standard behavior of IRC clients, as standardized in
-[https://tools.ietf.org/html/rfc2812](RFC 2812).
+[RFC 2812](https://tools.ietf.org/html/rfc2812).
 
 This standard should be defined in the Server INFO response as a server feature/requirement.
 
