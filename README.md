@@ -85,6 +85,8 @@ vary between IBIP-compliant bots.
 The "[\<language\>]" component is **optional**, and specifies the language(s)
 in which the IRC bot was developed. If multiple languages were used, it is
 recommended that they be separated by slashes, although this is not mandatory.
+This component **may not** contain mIRC color codes or other non-text
+characters, to simplify parsing.
 
 After the "[\<language\>]" component, the bot writer may choose to specify any
 additional information they consider pertinent to someone identifying bots with
